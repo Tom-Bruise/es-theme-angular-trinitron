@@ -1,8 +1,8 @@
 <!--
 theme name:		Angular
 version:		1.0
-author:			Lilbud
-email:			bvw20002010@gmail.com
+author:			Lilbud | Tom-Bruise
+email:			bvw20002010@gmail.com | ttom.bbruise@gmail.com
 license:		creative commons CC-BY-NC-SA
 -->
 
@@ -27,7 +27,8 @@ license:		creative commons CC-BY-NC-SA
 			<pos>0 0</pos>
 			<maxSize>1 1</maxSize>
 		</image>
-		
+
+<!--		
 		<text name="helpsystem" extra="true">
 			<text>Start - Menu  |  X - Random  |  A - Select</text>
 			<fontPath>./assets/Product Sans Regular.ttf</fontPath>
@@ -35,10 +36,11 @@ license:		creative commons CC-BY-NC-SA
 			<zIndex>71</zIndex>
 			<color>ffffff</color>
 		</text>
+-->
 		
 	</view>
 	
-	<view name="system, basic, detailed, video">
+	<view name="system">
 		
 		<image name="sidebar" extra="true">
 			<path>./assets/carousel1.svg</path>		
@@ -57,7 +59,13 @@ license:		creative commons CC-BY-NC-SA
 		
 	</view>
 	
-	<view name="detailed, video">
+	<view name="basic, detailed, video">
+
+ 		<image name="sidebar" extra="true">
+                        <path>./assets/carousel1.svg</path>
+                        <color>${systemColor}CF</color>
+                        <zIndex>70</zIndex>
+                </image>
 		
 		<image name="md_image">
 			<origin>0 0</origin>
@@ -65,34 +73,68 @@ license:		creative commons CC-BY-NC-SA
 			<pos>0 0</pos>
 			<maxSize>1 1</maxSize>
 		</image>
-		
+
+<!--
 		<image name="md_marquee" extra="true">
 			<origin>0.5 0.5</origin>
 			<zIndex>71</zIndex>
 		</image>
+-->
 		
 		<text name="md_description">
 			<forceUppercase>0</forceUppercase>
 			<zIndex>71</zIndex>
+			<pos>0.54 0.7</pos>
+			<size>0.4 0.25</size>
 			<fontPath>./assets/Product Sans Regular.ttf</fontPath>
+			<fontSize>0.04</fontSize>
 			<color>ffffff</color>
 		</text>
-		
+
+<!--
 		<text name="md_lbl_developer, md_developer, md_lbl_players, md_players, md_lbl_releasedate, md_lbl_rating">
 			<fontPath>./assets/Product Sans Regular.ttf</fontPath>
+			<fontSize>0.3</fontSize>
 			<color>ffffff</color>
 			<zIndex>71</zIndex>
 			<origin>0 0</origin>
+			<pos>0.5 0.5</pos>
 		</text> 
+-->
+
+ 		<datetime name="md_releasedate">
+                        <fontPath>./assets/Product Sans Regular.ttf</fontPath>
+                        <fontSize>0.04</fontSize>
+                        <color>ffffff</color>
+                        <zIndex>71</zIndex>
+                        <origin>0 0</origin>
+                        <pos>0.54 0.625</pos>
+			<format>%Y</format>
+                </datetime>
+
+		 <text name="md_developer">
+                        <fontPath>./assets/Product Sans Regular.ttf</fontPath>
+                        <fontSize>0.04</fontSize>
+                        <color>ffffff</color>
+                        <zIndex>71</zIndex>
+                        <origin>0 0</origin>
+                        <pos>0.61 0.63</pos>
+			<size>0.4 0.04</size>
+                </text>
+
+
 <!-------------RELEASE------------------->			
+<!--
 		<datetime name="md_releasedate">
 			<format>%Y</format>
 			<zIndex>71</zIndex>
 			<fontPath>./assets/Product Sans Regular.ttf</fontPath>
 			<color>ffffff</color>
-			<origin>0 0</origin>
 		</datetime>	
+-->
 <!-------------RATINGS------------------->					
+
+<!--
 		<rating name="md_rating">
 			<color>ffffffff</color>
 			<origin>0 0</origin>
@@ -100,11 +142,14 @@ license:		creative commons CC-BY-NC-SA
 			<unfilledPath>./assets/rating_unfilled.svg</unfilledPath>
 			<zIndex>80</zIndex>
 		</rating>
+
+-->
 		
 	</view>
 	
 	<view name="basic, detailed, video">
-		
+
+<!--		
 		<image name="gradientbar" extra="true">
 			<path>./assets/box.png</path>
 			<color>00000095</color>
@@ -113,13 +158,13 @@ license:		creative commons CC-BY-NC-SA
 			<size>0.6 0.234375</size>
 			<zIndex>69</zIndex>
 		</image>
-		
+-->
 		<image name="bg2" extra="true">
 			<path>./assets/box.png</path>
-			<color>000000</color>
+			<color>000000FF</color>
 			<zIndex>66</zIndex>
 		</image>
-		
+
 		<image name="dividerline" extra="true">
 			<path>./assets/box.png</path>
 			<color>ffffff</color>
@@ -128,17 +173,18 @@ license:		creative commons CC-BY-NC-SA
 			<size>0.365 0.001</size>
 			<zIndex>71</zIndex>
 		</image>
+
 		
 		<text name="md_lbl_lastplayed, md_lbl_publisher, md_publsher, md_lbl_playcount, md_playcount">
 			<pos>1 1</pos>
 		</text>
-		
+
 		<image name="logo">		
 			<path>./assets/logos/gamelist/${system.theme}.svg</path>		
 			<zIndex>71</zIndex>
 			<origin>0.5 0.5</origin>
 		</image>
-		
+ <!--		
 		<text name="helpsystem" extra="true">
 			<text>A - Launch  |  B - Back  |  X - Random  |  Y - Favorite</text>
 			<fontPath>./assets/Product Sans Regular.ttf</fontPath>
@@ -146,13 +192,13 @@ license:		creative commons CC-BY-NC-SA
 			<zIndex>71</zIndex>
 			<color>ffffff</color>
 		</text>
-		
+--> 	 			
 		<textlist name="gamelist">
 			<fontPath>./assets/Product Sans Regular.ttf</fontPath>
-			<fontSize>0.03</fontSize>
+			<fontSize>0.05</fontSize>
 			<horizontalMargin>0.01</horizontalMargin>
 			<lineSpacing>2</lineSpacing>
-			<pos>0.5951683748169839 0.20442708333333331</pos>
+			<pos>0.5951683748169839 0.145</pos>
 			<zIndex>71</zIndex>
 			<size>0.364 0.49088541666</size>
 			<selectedColor>ffffff</selectedColor>
@@ -160,8 +206,8 @@ license:		creative commons CC-BY-NC-SA
 			<secondaryColor>ffffff</secondaryColor>
 			<selectorColor>ffffff</selectorColor>
 			<selectorImagePath>./assets/selector.png</selectorImagePath>
-			<selectorHeight>0.06</selectorHeight>
-			<selectorOffsetY>-0.008</selectorOffsetY>
+			<selectorHeight>0.075</selectorHeight>
+			<selectorOffsetY>0.000</selectorOffsetY>
 			<alignment>left</alignment>
 		</textlist> 
 		
@@ -171,12 +217,12 @@ license:		creative commons CC-BY-NC-SA
 		
 		<video name="md_video">
 			<origin>0 0</origin>
-			<delay>1</delay>
+			<delay>0</delay>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
 			<zIndex>69</zIndex>
-			<pos>0 0</pos>
-			<maxSize>1 1</maxSize>
+			<pos>-0.1 -0.1</pos>
+			<maxSize>1.15 1.15</maxSize>
 		</video>
 	
 	</view>
