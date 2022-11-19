@@ -1,4 +1,4 @@
-# This is a modification of the Angular Theme for EmulationStation, with changes optimized for 240p resolutions. It was only tested on a Sony Trinitron KV-27FS100.
+# This is a modification of Angular Theme for EmulationStation, with changes optimized for 240p resolutions. It was only tested on a Sony Trinitron KV-27FS100.
 
 
 # Angular Theme
